@@ -23,9 +23,33 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         mahasiswa::create([
-            'nama_mahasiswa' => 'Raie Aswajjillah',
-            'nim' => '41037006211028',
-            '' => ''
+            'nama_mahasiswa' => "rifqi",
+            'nim' => "41037006211013",
+            'jurusan' => "teknik informatika",
+        ]);
+
+        mahasiswa::create([
+            'nama_mahasiswa' => "munawar",
+            'nim' => "41037006211013",
+            'jurusan' => "teknik industri",
+        ]);
+
+        mahasiswa::create([
+            'nama_mahasiswa' => "ridwan",
+            'nim' => "41037006211013",
+            'jurusan' => "teknik elektro",
+        ]);
+
+        dosen::create([
+            'nama_dosen' => "bapak galih S.T M.T",
+            'nidn' => "41037006211013",
+            'fakultas' => "teknik",
+        ]);
+
+        mataKuliah::create([
+            'kode_mata_kuliah' => "12",
+            'nama_mata_kuliah' => "PBKK",
+            'jurusan' => "teknik informatika",
         ]);
     }
 }
